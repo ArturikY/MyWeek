@@ -1,0 +1,19 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(/public/images/background.jpg);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.days-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
