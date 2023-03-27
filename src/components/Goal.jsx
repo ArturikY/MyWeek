@@ -1,13 +1,13 @@
-import styles from './Day.module.scss'
+import styles from './Goal.module.scss'
 
-function Goal() {
-    return (
-        <div className={styles.goal}>
-          <div className="dot"></div>
-            <b className="title_goal">Learning TypeScrpit</b>
-            <div className="content_goal">RED Group course</div>
-            <div className="time_goal">1 hours</div>
-        </div>
+function Goal({goal}) {
+  return (
+    <div key={goal.id} className={styles.goal}>
+      <input type="checkbox" className={styles.checkbox} />
+      <b className={styles.title}>{goal.title}</b>
+      <div className={styles.description}>{goal.description}</div>
+      <div className={styles.time}>{goal.time}</div>
+    </div>
     )
 }
 

@@ -1,19 +1,11 @@
-import Day from "./components/Day"
+import Week from "./components/Week"
 
 import '../src/assets/styles/index.scss'
 
 function App() {
   return (
     <div className="App">
-      <h1>My Week</h1>
-      <div className="days-container">
-        <Day />
-        <Day />
-        <Day />
-        <Day />
-        <Day />
-        <Day />
-      </div>
+      <Week />
     </div>
   )
 }

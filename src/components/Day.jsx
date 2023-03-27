@@ -1,21 +1,18 @@
 import styles from './Day.module.scss'
 
-import Goal from "./Goal" 
+import Goal from "./Goal"
 
-function Day() {
+function Day({id, day, goals}) {
   return (
-    <div className={styles.container}>
+    <div key={id} className={styles.container}>
       <div className={styles.title}>
-        <h2>Monday</h2>
+        <h2>{day}</h2>
         <div className={styles.underline} />
       </div>
       <div className={styles.goals}>
-          <Goal />
-          <Goal />
-          <Goal />
-          <Goal />
-          <Goal />
-          <Goal />
+          {goals.map(goal => (
+            <Goal goal={goal} />
+          ))}
         </div>
       </div>
     )
